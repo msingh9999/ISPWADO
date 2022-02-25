@@ -295,7 +295,7 @@ stages:
     displayName: Trigger Release Pipeline
     dependsOn: 
     - checkQualityGate
-    condition: succeeded('checkQualityGate')
+    condition: and(succeeded('checkQualityGate'), eq(1,0))
     steps:
     - task: PowerShell@2
       displayName: Trigger Release

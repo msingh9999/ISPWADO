@@ -11,7 +11,7 @@ variables:
 - name: 'ispwContainerName'
   value: 'PFHMKS0XX'
 - name: 'ispwContainerType'
-  value: '2'
+  value: '1'
 - name: 'ispwLevel'
   value: 'DEV1'
 - name: 'gitRepo'

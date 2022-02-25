@@ -6,6 +6,14 @@ pool:
   # Set "runtime" variables
 variables:
 - group: 'mainframe-pipeline-parameters'
+- name: 'ispwApplication'
+  value: 'MKS1' 
+- name: 'ispwContainerName'
+  value: 'PFHMKS0XX'
+- name: 'ispwContainerType'
+  value: '2'
+- name: 'ispwLevel'
+  value: 'QA1'
 - name: 'gitRepo'
   value: 'FTSDEMO_$(ispwApplication)_Unit_Tests'
 - name: 'ccSystem'

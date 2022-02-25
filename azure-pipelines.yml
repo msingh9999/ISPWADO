@@ -109,6 +109,7 @@ stages:
   # Download Topaz for Total Test Repository from GitHub
     - task: CmdLine@2
       displayName: Get Unit Tests
+      condition: ${{eq(1,0)}}
       inputs:
         script: |
           echo Downloading Unit Tests using GitHub Repository $(gitProject)/$(gitRepo)
@@ -133,6 +134,7 @@ stages:
   # Execute Topaz for Total Test Scenarios for Downloaded Sources
     - task: CmdLine@2
       displayName: Run Unit Tests
+      condition: ${{eq(1,0)}}
       inputs:
         script: |
           echo Executing Unit Tests using Parameters
@@ -171,6 +173,7 @@ stages:
   # Download Code Coverage Results
     - task: CmdLine@2
       displayName: Get Code Coverage Results
+      condition: ${{eq(1,0)}}
       inputs:
         script: |
           echo Downloading Code Coverage Results using Parameters
@@ -246,10 +249,10 @@ stages:
             "-Dsonar.sources=$(sonarSources)" ^
             "-Dsonar.cobol.copy.directories=$(sonarSources)" ^
             "-Dsonar.cobol.copy.suffixes=cpy" ^
-            "-Dsonar.cobol.file.suffixes=cbl,testsuite,testscenario,stub,results,scenario,context" ^
-            "-Dsonar.tests=$(testFolderVt)" ^
-            "-Dsonar.testExecutionReportPaths=$(testResultFolderVt)" ^
-            "-Dsonar.coverageReportPaths=$(codeCoverageReportFile)"
+            "-Dsonar.cobol.file.suffixes=cbl,testsuite,testscenario,stub,results,scenario,context" 
+ #           "-Dsonar.tests=$(testFolderVt)" ^
+ #           "-Dsonar.testExecutionReportPaths=$(testResultFolderVt)" ^
+ #           "-Dsonar.coverageReportPaths=$(codeCoverageReportFile)"
 
   - job: checkQualityGate
     displayName: Check Quality Gate

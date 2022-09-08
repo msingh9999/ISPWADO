@@ -238,7 +238,6 @@ stages:
   # Run Sonar Scanner using the CLI instead
     - task: CmdLine@2
       displayName: Run Sonar Scanner
-      condition: ${{eq(1,0)}}
       inputs:
         script: |
           "$(sonarScannerPath)\sonar-scanner" ^
@@ -258,7 +257,6 @@ stages:
 
   - job: checkQualityGate
     displayName: Check Quality Gate
-    condition: ${{eq(1,0)}}
     dependsOn: sonar
   
   # Query result of Sonar Quality Gate and set EXITCODE accordingly    

@@ -238,6 +238,7 @@ stages:
   # Run Sonar Scanner using the CLI instead
     - task: CmdLine@2
       displayName: Run Sonar Scanner
+      condition: ${{eq(1,0)}}
       inputs:
         script: |
           "$(sonarScannerPath)\sonar-scanner" ^

@@ -16,7 +16,7 @@ variables:
   value: 'DEV1'
 - name: 'gitRepo'
   value: 'CWXTCOB_MKS1'
-  value: 'FTSDEMO_$(ispwApplication)_Unit_Tests'
+  #value: 'FTSDEMO_$(ispwApplication)_Unit_Tests'
 - name: 'ccSystem'
   value: 'AZURE_$(ispwContainerName)'
 - name: 'ccDdio'
@@ -110,7 +110,7 @@ stages:
   # Download Topaz for Total Test Repository from GitHub
     - task: CmdLine@2
       displayName: Get Unit Tests
-      condition: ${{eq(1,0)}}
+      #condition: ${{eq(1,0)}}
       inputs:
         script: |
           echo Downloading Unit Tests using GitHub Repository $(gitProject)/$(gitRepo)

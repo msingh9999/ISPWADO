@@ -170,13 +170,13 @@ stages:
               -G ^
               -v 6 ^
               -l jenkins ^
-              -loglevel ALL ^
+              -loglevel INFO ^
               -data $(cliWorkpace)
 
   # Download Code Coverage Results
     - task: CmdLine@2
       displayName: Get Code Coverage Results
-      condition: ${{eq(1,0)}}
+      #condition: ${{eq(1,0)}}
       inputs:
         script: |
           echo Downloading Code Coverage Results using Parameters

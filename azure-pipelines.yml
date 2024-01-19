@@ -13,7 +13,7 @@ variables:
 - name: 'ispwContainerType'
   value: '1'
 - name: 'ispwLevel'
-  value: 'PRD'
+  value: 'DEV1'
 - name: 'gitRepo'
   value: 'FTSDEMO_$(ispwApplication)_Unit_Tests'
 - name: 'ccSystem'
@@ -40,7 +40,7 @@ variables:
   ${{ elseif eq(variables['ispwLevel'], 'DEV2') }}:
     value: QA2
   ${{ else}}:
-    value: PRD
+    value: QA3
 - name: contextVars
   value: '"ispw_app=$(ispwApplication),ispw_level=$(ispwTargetLevel)"'
 

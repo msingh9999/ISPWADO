@@ -254,9 +254,9 @@ stages:
             "-Dsonar.cobol.copy.directories=$(sonarSources)" ^
             "-Dsonar.cobol.copy.suffixes=cpy" ^
             "-Dsonar.cobol.file.suffixes=cbl,testsuite,testscenario,stub,results,scenario,context" 
- #           "-Dsonar.tests=$(testFolderVt)" ^
+            "-Dsonar.tests=$(testFolderVt)" ^
  #           "-Dsonar.testExecutionReportPaths=$(testResultFolderVt)" ^
- #           "-Dsonar.coverageReportPaths=$(codeCoverageReportFile)"
+            "-Dsonar.coverageReportPaths=$(codeCoverageReportFile)"
 
   - job: checkQualityGate
     displayName: Check Quality Gate

@@ -206,7 +206,7 @@ stages:
 
 - stage: qualityGate
   displayName: Quality Gate
-  condition: ${{eq(1,0)}}
+  #condition: ${{eq(1,0)}}
   jobs:
   - job: sonar
     displayName: run Sonar Scan, Check Quality Gate

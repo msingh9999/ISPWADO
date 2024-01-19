@@ -125,7 +125,7 @@ stages:
           git config remote.origin.url https://github.com/$(gitProject)/$(gitRepo).git 
           git fetch --tags --progress -- https://github.com/$(gitProject)/$(gitRepo).git +refs/heads/*:refs/remotes/origin/*
           git config core.sparsecheckout 
-          git checkout -f master
+          git checkout -f main
 
 - stage: tests
   displayName: Tests

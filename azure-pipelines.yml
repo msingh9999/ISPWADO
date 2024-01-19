@@ -30,7 +30,7 @@ variables:
   value: '5c519facfba8720a90ccc645'
 - name: 'testFolderVt'
   #value: 'tests/Virtualized_Tests'
-  value: 'tests/$(gitRepo)/Unit Test'
+  value: 'tests/$(gitRepo)/Unit Test/Scenarios'
 - name: 'testResultFolderVt'
   value: './TTTSonar/Virtualized_Tests.cli.suite.sonar.xml'
 - name: 'codeCoverageReportFile'

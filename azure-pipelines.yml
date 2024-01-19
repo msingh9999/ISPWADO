@@ -137,7 +137,7 @@ stages:
   # Execute Topaz for Total Test Scenarios for Downloaded Sources
     - task: CmdLine@2
       displayName: Run Unit Tests
-      #condition: ${{eq(1,0)}}
+      condition: ${{eq(1,0)}}
       inputs:
         script: |
           echo Executing Unit Tests using Parameters

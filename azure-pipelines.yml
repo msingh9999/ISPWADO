@@ -154,11 +154,11 @@ stages:
           CD $(workspaceRoot)
           $(cliPath)\TotalTestFTCLI.bat ^
               -e $(tttEnvironment) ^
-              -u $(cesUser) ^
-              -p $(cesPass) ^
+              -u $(hostUser) ^
+              -p $(hostPassword) ^
               -s $(cesUri)/totaltestapi/ ^
-              -cesu $(cesUser) ^
-              -cesp $(cesPass) ^
+              -cesu $(hostUser) ^
+              -cesp $(hostPassword) ^
               -f $(testFolderVt) ^
               -pnf changedPrograms.json ^
               -ccrepo $(ccRepo) ^

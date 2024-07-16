@@ -9,7 +9,7 @@ variables:
 - name: 'ispwApplication'
   value: 'MKS1' 
 - name: 'ispwContainerName'
-  value: 'MOTIONREL1'
+  value: 'MMOREL01'
 - name: 'ispwContainerType'
   value: '1'
 - name: 'ispwLevel'

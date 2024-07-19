@@ -170,7 +170,7 @@ stages:
               -G ^
               -v 6 ^
               -l jenkins ^
-              -loglevel INFO ^
+              -loglevel ALL ^
               -data $(cliWorkpace)
 
   # Download Code Coverage Results

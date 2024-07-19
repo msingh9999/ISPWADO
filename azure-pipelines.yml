@@ -9,7 +9,7 @@ variables:
 - name: 'ispwApplication'
   value: 'MKS1' 
 - name: 'ispwContainerName'
-  value: 'MMOD2R'
+  value: 'MMOREL1'
 - name: 'ispwContainerType'
   value: '1'
 - name: 'ispwLevel'
@@ -170,7 +170,7 @@ stages:
               -G ^
               -v 6 ^
               -l jenkins ^
-              -loglevel ALL ^
+              -loglevel INFO ^
               -data $(cliWorkpace)
 
   # Download Code Coverage Results

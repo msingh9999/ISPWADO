@@ -13,7 +13,7 @@ variables:
 - name: 'ispwContainerType'
   value: '1'
 - name: 'ispwLevel'
-  value: 'DEV1'
+  value: 'DEV3'
 - name: 'gitRepo'
   value: 'FTSDEMO_$(ispwApplication)'
   #value: 'FTSDEMO_$(ispwApplication)_Unit_Tests'

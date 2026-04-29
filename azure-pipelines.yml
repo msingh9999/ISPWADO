@@ -6,12 +6,12 @@ pool:
   # Set "runtime" variables
 variables:
 - group: 'mainframe-pipeline-parameters'
-- name: 'ispwApplication'
-  value: 'MKS1' 
-- name: 'ispwContainerName'
-  value: 'MKS1ADOR02'
-- name: 'ispwContainerType'
-  value: '1'
+#- name: 'ispwApplication'
+#  value: 'MKS1' 
+#- name: 'ispwContainerName'
+#  value: 'MKS1ADOR02'
+#- name: 'ispwContainerType'
+#  value: '1'
 - name: 'ispwLevel'
   value: 'DEV1'
 - name: 'gitRepo'
